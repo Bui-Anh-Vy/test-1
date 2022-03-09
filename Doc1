@@ -1,14 +1,58 @@
 <!DOCTYPE html> 
-<html> 
-    <head> 
-        <title> Web title </title>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <head> 
+            <title> Web title </title>
     </head>
 
     <body>
-        <form>
-            <h1>Select</h1>
-            
+        <form action="contact.html" method="post" enctype="multipart/form-data">
+        <div class="input-group">
+            <label for="contact_purpose">contact purpose</label>
+            <select name="contact_purpose" id="contact_purpose">
 
-        </form>
+                <option value="Business"></option>
+                <option value="Persional"></option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="contact_purpose">contact purpose</label>
+            <input type="text" value="name" id="name">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" value="email" id="email">
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Your phone</label>
+            <input type="tel" value="phone" id="phone">
+        </div>
+
+        <div class="input-group">
+            <label for="contact_day">Check days</label>
+            <input type="checkday" name="day []" value="Mon" id="days_mon"> <label for="days_mon">Mon</label>
+            <input type="checkday" name="day []" value="Tue" id="days_tue"> <label for="days_tue">Tue</label>
+            <input type="checkday" name="day []" value="Wed" id="days_wed"> <label for="days_wed">Wed</label>
+            <input type="checkday" name="day []" value="Thur" id="days_thur"> <label for="days_thur">Wed</label>
+            <input type="checkday" name="day []" value="Fri" id="days_fri"> <label for="days_fri">Wed</label>
+            <input type="checkday" name="day []" value="Sat" id="days_sat"> <label for="days_sat">Wed</label>
+            <input type="checkday" name="day []" value="Sun" id="days_sun"> <label for="days_sun">Wed</label>
+
+        </div>
+
+
+        <input type="file" value="attachment">
+        <input type="tell" value="phone">
+
+        <input type="email" value="">
+        <input type="submit" value="send">
+        <input type="reset" value="clear">
+    </form>
     </body>
 </html>
